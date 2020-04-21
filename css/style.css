@@ -1,3 +1,85 @@
+html {
+    font-size: 18px;
+}
 body {
+    margin: 0;
+
     font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+*,
+*:before,
+*:after {
+    /* бордеры и паддинги идут во внутрь,
+     не расширяют блок*/
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    /* у заголовков по-умолчанию, отступы сверху 
+     и снизу, убираем отступы 0 - сверхуб 0 - слева и справа, 
+     10 - оставляем снизу */
+    margin: 0 0 10px;
+}
+
+/* если растянем больше 1000px,
+ то чтобы контент оставался в центре хэдэра*/
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*============  Page  ===========*/
+
+.page {
+    width: 100%;
+    /*view port - зависит от высоты экрана обзора браузера(окна)*/
+    height: 100vh;
+    
+    background-color: #c4c4c4;
+}
+
+/*============  Header  ===========*/
+
+.header {
+    background-color: #fff;
+    padding: 1rem 0;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo img{
+    display: block;
+}
+
+.header-nav-link {
+    color: #000;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    margin-left: 1rem;
+
+    transition: color .2s linear;
+}
+
+.header-nav-link:hover {
+    color: #999;
+
+}
+
+.header-nav-link.active {
+    color: #00d0aa;
 }
