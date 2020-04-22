@@ -157,7 +157,50 @@ p {
     display: block; 
 }
 
-.footer-content {
-    background-color: rgb(14, 14, 14);
-    padding: 5rem 0;
+/*============  Footer  ===========*/
+
+.footer {
+    background-color: rgb(12, 12, 12);
+    padding: 3rem 0;
+}
+
+.footer-inner {
+    display: flex;
+}
+
+.company-licence {
+    margin-right: 5rem;
+}
+
+.contacts {
+    margin-right: 4rem;
+}
+
+.footer-links-left {
+    margin-right: 1rem;
+}
+
+.social-network {
+    margin-left: 4rem;
+}
+
+.company-name {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.copyright {
+    font-size: 0.7rem;
+    color: #bcbcbc;
+}
+
+.contacts-link {
+    font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+    color: #bcbcbc;
+    font-size: 0.7rem;
+    margin-bottom: 0.2rem;
+    display: block;
 }
